@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aethel A.M.I. - Baixar para Windows</title>
+  <meta name="description" content="Aethel A.M.I.: assistente de inteligência artificial para Windows, com matemática, geometria, histórico e temas." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="intro" aria-hidden="true">
+    <canvas id="introCanvas"></canvas>
+    <div id="flash"></div>
+    <h1 id="introTitle">Aethel A.M.I.</h1>
+    <button id="skip" type="button">Pular introdução</button>
+  </div>
+
+  <header class="top">
+    <span class="brand"><svg width="26" height="26" viewBox="0 0 64 64" aria-hidden="true"><path d="M32 2 C34 22 42 30 62 32 C42 34 34 42 32 62 C30 42 22 34 2 32 C22 30 30 22 32 2 Z" fill="var(--accent-2)"/></svg> Aethel A.M.I.</span>
+    <nav><a href="#temas">Temas</a><a href="#recursos">Recursos</a><button id="replay" type="button">Rever introdução</button></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Uma IA para estudar, programar e resolver problemas.</h2>
+      <p>O Aethel A.M.I. é um aplicativo para Windows com conversa, matemática, geometria e histórico guardado no seu computador.</p>
+      <div class="cta">
+        <a id="dl" class="btn off" href="#" rel="noopener">Baixar para Windows</a>
+        <small id="dlInfo">Verificando o instalador...</small>
+      </div>
+      <p class="meta" id="dlMeta">Windows 10/11 (64 bits)</p>
+      <p class="note">O Windows pode mostrar o aviso &ldquo;aplicativo não reconhecido&rdquo;, porque o instalador ainda não tem assinatura digital. Clique em <b>Mais informações</b> e depois em <b>Executar assim mesmo</b>.</p>
+    </section>
+
+    <section id="temas" class="block">
+      <h3>Três temas, trocados na hora</h3>
+      <p class="lead">Esta é uma prévia da interface com as mesmas cores do aplicativo. Clique para trocar.</p>
+      <div class="pick" role="group" aria-label="Temas">
+        <button type="button" data-t="black-purple" aria-pressed="true">Black &amp; Purple</button>
+        <button type="button" data-t="tri-color" aria-pressed="false">Purple, Green &amp; Blue</button>
+        <button type="button" data-t="light" aria-pressed="false">Light</button>
+      </div>
+      <div id="mock" class="mock" data-theme="black-purple">
+        <div class="m-side"><b>Aethel A.M.I.</b><i class="on"></i><i></i><i></i></div>
+        <div class="m-main"><div class="bub a">Qual é a raiz de 144?</div><div class="bub b">A raiz quadrada de 144 é 12, porque 12 &times; 12 = 144.</div><div class="m-in">Escreva sua mensagem</div></div>
+      </div>
+    </section>
+
+    <section id="recursos" class="block">
+      <h3>O que já existe e o que vem aí</h3>
+      <ul class="feat">
+        <li><b>Temas personalizáveis</b><span class="ok">Disponível no app</span></li>
+        <li><b>Introdução animada</b><span class="wip">Em desenvolvimento no app</span></li>
+        <li><b>Conversa com IA</b><span class="wip">Em desenvolvimento</span></li>
+        <li><b>Histórico e memória</b><span class="wip">Em desenvolvimento</span></li>
+        <li><b>Matemática e geometria</b><span class="wip">Em desenvolvimento</span></li>
+        <li><b>Voz</b><span class="wip">Em desenvolvimento</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>Aethel A.M.I. &middot; versão 0.1 &middot; &copy; 2026</footer>
+  <script src="config.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

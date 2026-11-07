@@ -1,0 +1,22 @@
+# ===== Segredos: NUNCA vão para o GitHub =====
+.env
+.env.*
+!.env.example
+
+# ===== Dependências e builds (recriáveis) =====
+node_modules/
+dist/
+build/
+target/
+app/src-tauri/target/
+
+# ===== Instaladores (grandes demais para o Git; vão no site ou em Releases) =====
+*.exe
+*.msi
+
+# ===== Lixo do sistema e logs =====
+*.log
+npm-debug.log*
+.DS_Store
+Thumbs.db
+.idea/

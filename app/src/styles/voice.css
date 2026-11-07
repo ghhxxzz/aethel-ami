@@ -1,0 +1,11 @@
+.mic { min-height: 48px; padding: 0 16px; border-radius: 12px; border: 1px solid var(--border); background: var(--surface-hi); white-space: nowrap; }
+.mic:hover:not(:disabled) { border-color: var(--accent-2); }
+.mic:disabled { opacity: 0.6; cursor: progress; }
+.mic.rec { border-color: #c0475a; background: rgba(192, 71, 90, 0.18); animation: pulse 1.2s infinite; }
+@keyframes pulse { 50% { box-shadow: 0 0 0 5px rgba(192, 71, 90, 0.2); } }
+.listen { margin-top: 8px; padding: 3px 12px; border-radius: 99px; border: 1px solid var(--border); background: var(--surface-hi); font-size: 13px; color: var(--text-dim); }
+.listen:hover { color: var(--text); border-color: var(--accent-2); }
+.heard { max-width: 560px; margin-top: 10px; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border); background: var(--surface); font-style: italic; }
+.opt-row select { max-width: 280px; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--border); background: var(--surface-hi); color: var(--text); font: inherit; }
+.opt-row input[type="range"] { accent-color: var(--accent); }
+@media (max-width: 760px) { .mic { padding: 0 10px; } }

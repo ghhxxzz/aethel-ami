@@ -1,0 +1,44 @@
+/* Aethel A.M.I. - tokens de cor de cada tema. Trocar o tema = trocar o data-theme no <html>. */
+:root,
+[data-theme="black-purple"] {
+  --bg: #08060e;
+  --bg-side: #0d0a16;
+  --surface: #151022;
+  --surface-hi: #1e1730;
+  --border: #2a2040;
+  --text: #ece8f6;
+  --text-dim: #9a90b4;
+  --accent: #9d4edd;
+  --accent-2: #c77dff;
+  --accent-3: #7b2cbf;
+  --on-accent: #ffffff;
+  --glow: 0 0 28px rgba(157, 78, 221, 0.35);
+}
+[data-theme="tri-color"] {
+  --bg: #070b14;
+  --bg-side: #0b1020;
+  --surface: #101830;
+  --surface-hi: #172242;
+  --border: #223058;
+  --text: #e8eefc;
+  --text-dim: #8fa0c8;
+  --accent: #8b5cf6;
+  --accent-2: #34d399;
+  --accent-3: #38bdf8;
+  --on-accent: #06101f;
+  --glow: 0 0 28px rgba(52, 211, 153, 0.28);
+}
+[data-theme="light"] {
+  --bg: #f4f5fa;
+  --bg-side: #ffffff;
+  --surface: #ffffff;
+  --surface-hi: #eceefa;
+  --border: #d9dcee;
+  --text: #1a1b2e;
+  --text-dim: #5d6180;
+  --accent: #6d4ae0;
+  --accent-2: #1f9d76;
+  --accent-3: #2563eb;
+  --on-accent: #ffffff;
+  --glow: 0 4px 18px rgba(109, 74, 224, 0.18);
+}

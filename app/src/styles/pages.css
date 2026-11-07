@@ -1,0 +1,32 @@
+/* Histórico na barra lateral */
+.convs { flex: 1; min-height: 0; overflow-y: auto; display: flex; flex-direction: column; gap: 2px; }
+.convs-head { padding: 0 12px 4px; font-size: 12px; color: var(--text-dim); text-transform: uppercase; letter-spacing: 0.08em; }
+.convs-empty { padding: 4px 12px; color: var(--text-dim); font-size: 13px; }
+.conv { display: flex; align-items: center; gap: 4px; border-radius: 9px; padding-right: 4px; }
+.conv:hover, .conv.active { background: var(--surface-hi); }
+.conv.active { box-shadow: inset 3px 0 0 var(--accent-2); }
+.conv-title { flex: 1; min-width: 0; padding: 8px 12px; text-align: left; color: var(--text-dim);
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.conv.active .conv-title, .conv:hover .conv-title { color: var(--text); }
+.conv-actions { display: none; gap: 2px; }
+.conv:hover .conv-actions, .conv:focus-within .conv-actions { display: flex; }
+.conv-actions button { width: 24px; height: 24px; border-radius: 6px; color: var(--text-dim); font-size: 13px; }
+.conv-actions button:hover { background: var(--border); color: var(--text); }
+.conv.editing input { width: 100%; padding: 7px 10px; border-radius: 8px; border: 1px solid var(--accent-2);
+  background: var(--surface); color: var(--text); font: inherit; }
+.conv.confirm { padding: 6px 10px; gap: 8px; font-size: 13px; }
+.conv.confirm button { padding: 2px 10px; border-radius: 99px; border: 1px solid var(--border); background: var(--surface-hi); }
+
+/* Página de memória */
+.mem-add { display: flex; gap: 10px; max-width: 560px; margin: 16px 0 6px; }
+.mem-add input { flex: 1; padding: 10px 14px; border-radius: 10px; border: 1px solid var(--border);
+  background: var(--surface); color: var(--text); font: inherit; }
+.mem-msg { color: var(--text-dim); font-size: 14px; margin-bottom: 8px; }
+.mem-list { list-style: none; max-width: 560px; display: grid; gap: 8px; margin: 12px 0 16px; }
+.mem-list li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 14px;
+  border: 1px solid var(--border); border-radius: 10px; background: var(--surface); overflow-wrap: anywhere; }
+.notice { margin: 0 clamp(18px, 5vw, 56px); padding: 8px 14px; border-radius: 10px; border: 1px solid var(--accent-2);
+  background: var(--surface); font-size: 14px; }
+.chat-empty .hint { font-size: 14px; }
+
+@media (max-width: 760px) { .convs { display: none; } }
